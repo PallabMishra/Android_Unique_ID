@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LayoutHolder"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF7F5"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="YOUR ID IS"
+        android:textAllCaps="false"
+        android:textColor="#A84B3A"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:context=".FindDeviceID" />
+
+    <LinearLayout
+        android:id="@+id/llEtHolder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".10"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/idholder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".80"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="18dp"
+            android:selectAllOnFocus="true"
+            android:textColor="#A84B3A"
+            tools:context=".FindDeviceID" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".10"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bEmailIt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:onClick="emailHandler"
+        android:text="Email it......."
+        android:textAllCaps="false"
+        android:textColor="#F4F2F1"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="30dp"
+        android:text="The Android device ID is a 16-character unique identifier of each Android-based device.\n\nIt is useful for debugging and development purposes."
+        android:textSize="16dp" />
+
+</LinearLayout>
